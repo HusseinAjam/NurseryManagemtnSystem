@@ -1,0 +1,7 @@
+Hello Sraj, I am realy sorry could not create Rannable jar file for unknow reasons
+I hope you imort the project and test it smoothly.
+
+Try to your first login with this admin account 
+
+username: Hussein
+password: 123ha

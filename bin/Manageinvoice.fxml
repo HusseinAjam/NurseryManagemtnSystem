@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manageInvoiceController">
+   <children>
+      <ListView fx:id="ChildListView" layoutX="7.0" layoutY="56.0" onMouseClicked="#ChildSelectedAction" prefHeight="191.0" prefWidth="143.0" />
+      <Label layoutX="85.0" layoutY="8.0" prefHeight="17.0" prefWidth="187.0" text="Unpaid Monthly Invoices List" />
+      <ListView fx:id="DueListView" layoutX="149.0" layoutY="56.0" prefHeight="191.0" prefWidth="193.0" />
+      <Label layoutX="7.0" layoutY="34.0" text="Select Child" />
+      <Label layoutX="267.0" layoutY="35.0" text="Due to Pay In" />
+      <Button fx:id="CalculateTotalButton" layoutX="20.0" layoutY="289.0" mnemonicParsing="false" onAction="#CalculateTotalAction" text="Check total amount plus any late fees " />
+      <Label layoutX="154.0" layoutY="35.0" text="Amount" />
+      <Label fx:id="TotalAmountLabel" layoutX="257.0" layoutY="293.0" text="Total Amount" />
+      <Button fx:id="SetAsPaidButton" layoutX="20.0" layoutY="319.0" mnemonicParsing="false" onAction="#SetAsPaidAction" prefHeight="25.0" prefWidth="218.0" text="Set as Paid and Send the reciete" />
+      <ListView fx:id="RegistrationInvoicesListView" layoutX="4.0" layoutY="374.0" prefHeight="169.0" prefWidth="299.0" />
+      <Label layoutX="76.0" layoutY="354.0" text="List of All Registration Invoices" />
+      <Separator layoutX="2.0" layoutY="351.0" prefHeight="3.0" prefWidth="612.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="351.0" />
+      <ListView fx:id="LeavingInvoicesListView" layoutX="308.0" layoutY="374.0" prefHeight="169.0" prefWidth="299.0" />
+      <Label layoutX="384.0" layoutY="354.0" text="List of All Leaving Invoices" />
+      <Separator layoutX="303.0" layoutY="366.0" orientation="VERTICAL" prefHeight="191.0" prefWidth="6.0" />
+      <Separator layoutX="351.0" orientation="VERTICAL" prefHeight="319.0" prefWidth="0.0" />
+      <Label layoutX="401.0" layoutY="12.0" text="List of All Paid  Monthly Invoices" />
+      <ListView fx:id="MonthlyInvicesListView" layoutX="361.0" layoutY="50.0" prefHeight="258.0" prefWidth="243.0" />
+      <Label fx:id="ChildNameLabel" layoutX="118.0" layoutY="262.0" text="Child Name" />
+   </children>
+</AnchorPane>

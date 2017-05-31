@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StaffProfilesController">
+   <children>
+      <Separator layoutX="292.0" orientation="VERTICAL" prefHeight="558.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="292.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="NameLabel" layoutX="411.0" layoutY="79.0" text="Staff Name" />
+      <Separator layoutX="330.0" layoutY="519.0" prefHeight="3.0" prefWidth="222.0" />
+      <TextArea fx:id="ChildDetailsTextView" editable="false" layoutX="317.0" layoutY="116.0" prefHeight="339.0" prefWidth="274.0" />
+      <Label layoutX="18.0" layoutY="107.0" prefHeight="17.0" prefWidth="50.0" text="Job Title" />
+      <Label layoutX="14.0" layoutY="146.0" prefHeight="17.0" prefWidth="135.0" text="Click on staff name " />
+      <ComboBox fx:id="JobsCombo" layoutX="92.0" layoutY="103.0" onAction="#JobsSelectedAction" prefHeight="25.0" prefWidth="198.0" />
+      <Label layoutX="16.0" layoutY="62.0" prefHeight="17.0" prefWidth="158.0" text="Search by Staff job Title" />
+      <ListView fx:id="StaffListView" layoutX="32.0" layoutY="174.0" onMouseClicked="#SearchListAction" prefHeight="268.0" prefWidth="249.0" />
+   </children>
+</AnchorPane>

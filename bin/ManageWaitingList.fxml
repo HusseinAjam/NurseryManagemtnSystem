@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageWaitingListController">
+   <children>
+      <ListView fx:id="StudentListView" layoutX="48.0" layoutY="84.0" onMouseClicked="#ChildSelectedAction" prefHeight="229.0" prefWidth="270.0" />
+      <Label layoutX="48.0" layoutY="61.0" text="Select Student " />
+      <Label layoutX="415.0" layoutY="70.0" text="Student Details" />
+      <Button fx:id="CheckAvailabilityButton" layoutX="98.0" layoutY="325.0" mnemonicParsing="false" onAction="#CheckAvailabilityAction" prefHeight="25.0" prefWidth="170.0" text="Check session availability" />
+      <Button fx:id="RegisterButton" layoutX="98.0" layoutY="359.0" mnemonicParsing="false" onAction="#RegisterAction" prefHeight="25.0" prefWidth="170.0" text="Register Student" />
+      <Button fx:id="DeleteButton" layoutX="98.0" layoutY="394.0" mnemonicParsing="false" onAction="#DeleteAction" prefHeight="25.0" prefWidth="170.0" text="Delete from List" />
+      <Label layoutX="233.0" layoutY="-3.0" text="Manage Waiting List">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="StudentDetails" layoutX="344.0" layoutY="101.0" prefHeight="212.0" prefWidth="223.0" />
+      <Label fx:id="ChildNameLabel" layoutX="304.0" layoutY="329.0" text="Child Name" />
+   </children>
+</AnchorPane>

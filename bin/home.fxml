@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="HomePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homeController">
+   <children>
+      <Label fx:id="welcomeLabel" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="148.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="13.0" prefHeight="30.0" prefWidth="473.0" text="The Nathants Day Nursery Managment System" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="RegisterNewChildButton" layoutX="28.0" layoutY="301.0" mnemonicParsing="false" onAction="#RegisterNewChildAction" prefHeight="41.0" prefWidth="233.0" text="Register a new Child" />
+      <Button fx:id="WithdrawChildButton" layoutX="27.0" layoutY="354.0" mnemonicParsing="false" onAction="#WithdrawChildAction" prefHeight="41.0" prefWidth="114.0" text="Withdraw  Child " />
+      <Button fx:id="DisplayChildProfileButton" layoutX="27.0" layoutY="186.0" mnemonicParsing="false" onAction="#DisplayChildProfileAction" prefHeight="41.0" prefWidth="233.0" text="Show Children Profiles" />
+      <Button fx:id="ManageStaffButton" layoutX="25.0" layoutY="496.0" mnemonicParsing="false" onAction="#ManageStaffAction" prefHeight="41.0" prefWidth="114.0" text="Add Staff" />
+      <Button fx:id="ChildAttendanceButton" layoutX="27.0" layoutY="79.0" mnemonicParsing="false" onAction="#ChildAttendanceAction" prefHeight="41.0" prefWidth="233.0" text="Manage Children Attendance" />
+      <Button fx:id="SetLatePickUpButton" layoutX="146.0" layoutY="130.0" mnemonicParsing="false" onAction="#SetLatePickUpAction" prefHeight="41.0" prefWidth="114.0" text="Set Late pick up" />
+      <Button fx:id="SetEarlyDroppingButton" layoutX="27.0" layoutY="130.0" mnemonicParsing="false" onAction="#SetEarlyDroppingAction" prefHeight="41.0" prefWidth="114.0" text="Set Early dropping" />
+      <Label layoutX="20.0" layoutY="46.0" prefHeight="27.0" prefWidth="72.0" text="Children" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="18.0" layoutY="465.0" prefHeight="3.0" prefWidth="254.0" />
+      <Separator layoutX="272.0" layoutY="44.0" orientation="VERTICAL" prefHeight="569.0" prefWidth="6.0" />
+      <Separator layoutX="14.0" layoutY="44.0" orientation="VERTICAL" prefHeight="569.0" prefWidth="0.0" />
+      <Button fx:id="ManageInvoceButton" layoutX="153.0" layoutY="245.0" mnemonicParsing="false" onAction="#ManageInvoceAction" prefHeight="41.0" prefWidth="105.0" text="Manage Invoice" />
+      <Button fx:id="ManageWaitingListButton" layoutX="28.0" layoutY="407.0" mnemonicParsing="false" onAction="#ManageWaitingListAction" prefHeight="41.0" prefWidth="233.0" text="Manage Waitng List" />
+      <Separator layoutX="17.0" layoutY="43.0" prefHeight="3.0" prefWidth="254.0" />
+      <Label layoutX="20.0" layoutY="464.0" prefHeight="27.0" prefWidth="60.0" text="Others" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="ManageSessionButton" layoutX="25.0" layoutY="547.0" mnemonicParsing="false" onAction="#ManageSessionAction" prefHeight="41.0" prefWidth="114.0" text="Manage Sessions" />
+      <Separator layoutX="15.0" layoutY="612.0" prefHeight="3.0" prefWidth="260.0" />
+      <Button fx:id="StaffAttendance" layoutX="151.0" layoutY="496.0" mnemonicParsing="false" onAction="#StaffAttendanceAction" prefHeight="41.0" prefWidth="114.0" text="Staff Attendance" />
+      <Pane fx:id="subPane" layoutX="300.0" layoutY="53.0" prefHeight="558.0" prefWidth="617.0" />
+      <Button fx:id="StaffProfilesButton" layoutX="151.0" layoutY="547.0" mnemonicParsing="false" onAction="#StaffProfilesAction" prefHeight="41.0" prefWidth="114.0" text="Staff Profiles" />
+      <Button fx:id="CreateInvoiceButton" layoutX="32.0" layoutY="245.0" mnemonicParsing="false" onAction="#CreateInvoiceAction" prefHeight="41.0" prefWidth="114.0" text="Create Invoice" />
+      <Button fx:id="ChangeChildSessionButton" layoutX="151.0" layoutY="354.0" mnemonicParsing="false" onAction="#ChangeChildSessionAction" prefHeight="41.0" prefWidth="114.0" text="Change Session" />
+      <Button fx:id="exist" layoutX="239.0" layoutY="16.0" mnemonicParsing="false" prefWidth="52.0" text="Exit" />
+      <Button fx:id="logoff" layoutX="162.0" layoutY="16.0" mnemonicParsing="false" onAction="#logoffAction" prefHeight="25.0" prefWidth="72.0" text="Log off" />
+   </children>
+</AnchorPane>
